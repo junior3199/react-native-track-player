@@ -218,7 +218,7 @@ class MusicService : HeadlessJsTaskService() {
     @MainThread
     fun add(tracks: List<Track>) {
         val items = tracks.map { it.toAudioItem() }
-        player.add(items, false)
+        player.add(items)
     }
 
     @MainThread
